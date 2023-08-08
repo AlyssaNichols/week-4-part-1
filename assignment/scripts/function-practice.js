@@ -94,7 +94,6 @@ console.log(find(3, ourArray));
 
 
 
-
 // ----------------------
 // Stretch Goals
 // ----------------------
