@@ -77,20 +77,18 @@ console.log(lastItem);
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
 
-// NEED TO COME BACK TO
-function find(array, value) {
-  for (let i = 0; i < array.length; i++) {
+function find(value, array) {
+  for ( let i = 0; i < array.length; i++ ) {
     if (array[i] === value) {
       return true;
-    } else
-  return false;
+    }
 }
+return false
 }
 
 let ourArray = [1, 2, 3, 4, 5];
-let value = 6;
-console.log(find(ourArray, value));
-/// NEED TO COME BACK TO!
+console.log(find(3, ourArray));
+
 
 
 
