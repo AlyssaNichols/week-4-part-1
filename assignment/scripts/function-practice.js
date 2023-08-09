@@ -104,12 +104,11 @@ console.log(find(3, ourArray));
 // COME BACK TO THIS IDIOT
 
 function isFirstLetter(letter, string) {
-  for (i = 0; i < array.length; i++){
-    let firstChar = string.charAt(0)
-  } console.log(firstChar)
-
+  if (string.length ===0 ){
+    return false;
+  }
+  return letter === string [0];
 }
-// COME BACK TO THIS IDIOT
 
 
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
