@@ -101,29 +101,34 @@ console.log('value is found within array', find(6, ourArray));
 //    string. Return true if it is, and false otherwise
 
 
-// COME BACK TO THIS IDIOT
-
 function isFirstLetter(letter, string) {
-  if (string.length ===0 ){
+  if (string.length === 0 ){
     return false;
   }
-  return letter === string [0];
+  return string[0] === letter;
 }
-
 
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
+
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
   let sum = 0
-  // TODO: loop to add items
+  let arr = [1, 2, 3, 4, 5];
+  for (i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
+   // TODO: loop to add items
   return sum;
 }
+console.log('the sum is:', sumAll());
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
+
+
 
 
 
