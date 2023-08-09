@@ -18,7 +18,7 @@ function helloName( name ) {
   return 'Hello ' + name + '!';
 }
 // Remember to call the function to test
- console.log(helloName('Mason'));
+ console.log('should say "Hello Mason!"', helloName('Mason'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {
@@ -26,14 +26,14 @@ function addNumbers( firstNumber, secondNumber ) {
   return answer
   // return firstNumber + secondNumber;
 }
-console.log (addNumbers(8, 12));
+console.log ('adding numbers with 8 & 12', addNumbers(8, 12));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( firstNumber, secondNumber, thirdNumber){
   let answer = firstNumber * secondNumber * thirdNumber;
   return answer
 }
-console.log(multiplyThree(2, 6, 8));
+console.log('multiplying numbers with 8 & 12 & 10', multiplyThree(8, 12, 10));
 
 
 // 5. Function that will return true if a number is positive, 
@@ -46,7 +46,7 @@ function isPositive( number ) {
     return false;
   }
 }
-console.log(isPositive(3))
+console.log('is number positive', isPositive(3))
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -66,7 +66,7 @@ function getLast( array ) {
   }
 }
 
-let myArray = [];
+let myArray = [1, 2, 3, 4];
 const lastItem = getLast(myArray);
 console.log(lastItem);
 
@@ -87,7 +87,7 @@ return false
 }
 
 let ourArray = [1, 2, 3, 4, 5];
-console.log(find(3, ourArray));
+console.log('value is found within array', find(6, ourArray));
 
 
 
