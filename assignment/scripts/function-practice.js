@@ -130,8 +130,28 @@ console.log('the sum is:', sumAll());
 
 
 
+function returnPositiveNumbers() {
+  const array = [2, 6, -1, 9, -3, -12, 15];
+  const positiveNumbers = array.filter(num => num > -1);
+  return positiveNumbers;
+
+}
+console.log(returnPositiveNumbers());
+
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+
+// I picked a problem where I am told to write a function converting minutes into seconds
+
+function minutesToSeconds () {
+  return minutes * 60
+}
+const minutes = 20;
+const seconds = minutesToSeconds(minutes);
+console.log(`${minutes} minutes is equal to ${seconds} seconds.`)
+
