@@ -12,7 +12,7 @@ function hello() {
 console.log('Test - should say "Hello World!"', hello());
 
 
-// 2. Function to return an personalized hello, using the `name` argument.
+// 2. Function to return a personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
   return 'Hello ' + name + '!';
@@ -26,14 +26,14 @@ function addNumbers( firstNumber, secondNumber ) {
   return answer
   // return firstNumber + secondNumber;
 }
-console.log ('adding numbers with 8 & 12', addNumbers(8, 12));
+console.log ('adding numbers with 8 & 12:', addNumbers(8, 12));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( firstNumber, secondNumber, thirdNumber){
   let answer = firstNumber * secondNumber * thirdNumber;
   return answer
 }
-console.log('multiplying numbers with 8 & 12 & 10', multiplyThree(8, 12, 10));
+console.log('multiplying numbers with 8 & 12 & 10:', multiplyThree(8, 12, 10));
 
 
 // 5. Function that will return true if a number is positive, 
@@ -116,7 +116,7 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 function sumAll( ) {
   let sum = 0
   let arr = [1, 2, 3, 4, 5];
-  for (i = 0; i < arr.length; i++){
+  for (let i = 0; i < arr.length; i++){
     sum += arr[i];
   }
    // TODO: loop to add items
